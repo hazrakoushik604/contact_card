@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Card</title>
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>My Contacts</h1>
+        <p class="subtitle">Save your contacts locally</p>
+
+        <!-- Contact Form -->
+        <div class="form-panel">
+            <div class="form-toggle-wrap">
+                <button id="toggleFormBtn" class="toggle-form-btn">Hide Form</button>
+            </div>
+
+            <div id="contactForm" class="contact-form">
+
+                <input type="text" id="name" placeholder="Enter name" pattern="[A-Za-z ]+">
+
+                <input type="tel" id="phone" placeholder="Enter contact number" maxlength="10" pattern="\d{10}" inputmode="numeric">
+
+                <input type="text" id="photo" placeholder="Enter photo URL">
+
+                <button onclick="addContact()">Add Contact</button>
+
+            </div>
+        </div>
+
+        <!-- Contact Cards -->
+        <div id="contactList" class="contact-list"></div>
+
+    </div>
+
+    <script src="contact.js"></script>
+
+</body>
+</html>
+
